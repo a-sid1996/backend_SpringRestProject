@@ -64,6 +64,8 @@ Returns a list of all the available jukebox settings. Each setting contains a li
 
 **Note** that setting is considered to be supported if jukebox has _all_ required components.
 
-## Submission
+## Documentation
 
-Submit your assignment using a public github / gitlab / bitbucket repository (please don't use "touchtunes" in repo name or description) or a zip archive.
+Run BackendProjectApplication main file and go to http://localhost:8080/swagger-ui/index.html to access API docs.
+
+Go to javadoc/index.html to access Javadoc html page.
