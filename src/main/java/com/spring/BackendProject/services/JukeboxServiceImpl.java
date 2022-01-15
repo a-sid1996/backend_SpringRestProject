@@ -92,6 +92,11 @@ public class JukeboxServiceImpl implements JukeboxService{
      * @return Filtered list of Jukeboxes
      */
     private List<Jukebox> filterJukeboxesBySettingId(List<Jukebox> jukeboxList, Set<String> settingsList) {
+
+        if (settingsList == null){
+            return new ArrayList<Jukebox>();
+        }
+
         return jukeboxList.stream()
                 .filter(
                         j -> Arrays.stream(j.getComponents()).map(Component::getName).collect(Collectors.toSet())
